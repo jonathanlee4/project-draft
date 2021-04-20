@@ -32,6 +32,7 @@ Contact Us
 
 	Comment * : <br/><textarea name="comment" rows="5" cols="40"></textarea><br>
 	<input type="Submit" name="SubmitThis" value="Preview">
+	 <br/>
   </form>
 
 
