@@ -16,8 +16,8 @@ if (array_key_exists("SubmitThis", $_POST)) {
 	//  - check required fields
 
 	//== Modify the required and expected arrays below to fit your form ========
-	$required = array('author', 'title','comment', 'city');
-	$expected = array('author', 'title','comment', 'city', 'email', 'tag', 'bgcolor');
+	$required = array('name', 'email','subject', 'city', 'comment');
+	$expected = array('name', 'email','subject', 'city', 'comment', 'tag');
 	$missing = array();
 
 	// use foreach loop to run through each item in the expected array
@@ -64,29 +64,11 @@ if (array_key_exists("SubmitThis", $_POST)) {
 			$author = "<a href='mailto:$email'>$author</a>";
 		}
 
-function makeTable ($bgcolor) {
 
-			// decide the value of $class, which depends on the value of $page
-			if ($bgcolor == 'pink') {
-				$previewTable = 'pink';
-			}
-			else {
-				$previewTable = 'green';
-			}
-
-			$previewTable = "<table>\n
-					<h1 class='$bgcolor'>A Fake Site</h1>\n
-					<h3>For CTEC 4309 PHP Exercise Only</h3>\n
-				</header>\n";
-
-				return $previewTable;
-		}
-
-		$output = "<table class='previewTable' style ='bgcolor'>
-				<tr><th>Author</th><td>$author </td></tr>
+		$output = "<table class='previewTable'>
+				<tr><th>Name</th><td>$name </td></tr>
 				<tr><th>Email</th><td>$email </td></tr>
-				<tr><th>Title</th><td>$title </td></tr>
-				<tr><th>Background Color</th><td>$bgcolor </td></tr>
+				<tr><th>Subject</th><td>$subject </td></tr>
 				<tr><th>Tag</th><td>$tagStr</td></tr>
 				<tr><th>City</th><td>$city</td></tr>
 				<tr><th>Comment</th><td>$comment</td></tr>
@@ -121,9 +103,7 @@ function makeTable ($bgcolor) {
     .previewTable {border-collapse: collapse;}
     .previewTable tr td, .previewTable tr th {border: 1px solid black; padding: 0.8em;}
     .previewTable tr th {background-color: darkgray; color: white;}
-		.pink {background-color: pink}
-		.green {background-color: green}
-
+		
 </style>
 </HEAD>
 
