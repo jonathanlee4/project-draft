@@ -16,8 +16,8 @@ if (array_key_exists("SubmitThis", $_POST)) {
 	//  - check required fields
 
 	//== Modify the required and expected arrays below to fit your form ========
-	$required = array('name', 'email','subject', 'city', 'comment');
-	$expected = array('name', 'email','subject', 'city', 'comment', 'tag');
+	$required = array('name', 'email','subject', 'comment', 'tag');
+	$expected = array('name', 'email','subject', 'comment', 'tag');
 	$missing = array();
 
 	// use foreach loop to run through each item in the expected array
@@ -70,7 +70,6 @@ if (array_key_exists("SubmitThis", $_POST)) {
 				<tr><th>Email</th><td>$email </td></tr>
 				<tr><th>Subject</th><td>$subject </td></tr>
 				<tr><th>Tag</th><td>$tagStr</td></tr>
-				<tr><th>City</th><td>$city</td></tr>
 				<tr><th>Comment</th><td>$comment</td></tr>
 					</table>";
 
