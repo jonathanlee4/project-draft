@@ -17,7 +17,7 @@ Contact Us
  <form action= "post3.php" method="post">
 	Name * : <input type="text" name="author"><br/>
 	Email * : <input type="text" name="email"><br/>
-	Subject * : <input type="text" name="title"><br/>
+	Subject : <input type="text" name="title"><br/>
 
 
 
