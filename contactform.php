@@ -14,7 +14,7 @@ Contact Us
 
 <h3>Form</h3>
 * required fields
- <form action= "post3.php" method="post">
+ <form action= "contact.php" method="post">
 	Name * : <input type="text" name="author"><br/>
 	Email * : <input type="text" name="email"><br/>
 	Subject * : <input type="text" name="title"><br/>
