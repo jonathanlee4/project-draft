@@ -1,8 +1,5 @@
 <?php
 //--------------------------
-// Form Processing Script
-//		This script is written to work with the form in post_form_3.php.
-//--------------------------
 
 
 //==========================
@@ -97,7 +94,7 @@ if (array_key_exists("SubmitThis", $_POST)) {
 <!DOCTYPE HTML>
 <HTML>
 <HEAD>
-<TITLE> CTEC 4309 Class Working File: Message Form Processing </TITLE>
+<TITLE> Wingfield's Breakfast and Burger Contact </TITLE>
 <style>
     .previewTable {border-collapse: collapse;}
     .previewTable tr td, .previewTable tr th {border: 1px solid black; padding: 0.8em;}
